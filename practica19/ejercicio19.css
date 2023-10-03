@@ -1,0 +1,70 @@
+body{
+    color: rgb(255, 255, 255);
+    background-color: rgb(177, 177, 177);
+}
+.cm{
+    background-color: rgb(0, 113, 156);
+    width:10cm;
+    margin-bottom: 10px;
+    
+}
+.mm{
+    background-color: rgb(0, 113, 156);
+    width:10mm;
+    margin-bottom: 10px;
+}
+.in{
+    background-color: rgb(0, 113, 156);
+    width:10in;
+    margin-bottom: 10px;
+}
+.px{
+    background-color: rgb(0, 113, 156);
+    width:10px;
+    margin-bottom: 10px;
+}
+.pt{
+    background-color: rgb(0, 113, 156);
+    width:10pt;
+    margin-bottom: 10px;
+}
+.pc{
+    background-color: rgb(0, 113, 156);
+    width:10pc;
+    margin-bottom: 10px;
+}
+.em{
+    background-color: rgb(0, 113, 156);
+    width:10em;
+    margin-bottom: 10px;
+}
+.ex{
+    background-color: rgb(0, 113, 156);
+    width:10ex;
+    margin-bottom: 10px;
+}
+.rem{
+    background-color: rgb(0, 113, 156);
+    width:10rem;
+    margin-bottom: 10px;
+}
+.vw{
+    background-color: rgb(0, 113, 156);
+    width:10vw;
+    margin-bottom: 10px;
+}
+.vh{
+    background-color: rgb(0, 113, 156);
+    width:10vh;
+    margin-bottom: 10px;
+}
+.vmin{
+    background-color: rgb(0, 113, 156);
+    width:10vmin;
+    margin-bottom: 10px;
+}
+.vmax{
+    background-color: rgb(0, 113, 156);
+    width:10vmax;
+    margin-bottom: 10px;
+}
