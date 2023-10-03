@@ -1,0 +1,17 @@
+header{
+    background-color: rgb(199, 241, 136);
+    height: 50px;
+}
+article{
+    background-color:rgb(255, 241, 223);
+    height: 1000px;
+    width: 80%;
+    margin-left: 5%;
+    float: left;
+}
+aside{
+    background-color:rgb(198, 194, 189);
+    height: 200px;
+    width: 10%;
+    float: left;
+}
