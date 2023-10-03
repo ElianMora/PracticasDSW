@@ -1,0 +1,26 @@
+
+div:nth-child(2){
+    background-color: aqua;
+}
+p:nth-last-child(2){
+    background-color: rgb(0, 113, 156);
+}
+p:empty{
+    background-color: brown;
+    width: 20%;
+    height: 25px;
+}
+p:first-child{
+    background-color: chartreuse;
+
+}
+p:last-child{
+    background-color: hotpink;
+}
+div:nth-of-type(1){
+    background-color: rgb(153, 116, 188);
+}
+div:nth-last-of-type(2){
+    background-color: aquamarine;
+
+}
