@@ -1,0 +1,44 @@
+header,nav,aside,section,article,footer{/*este se encarga del border y su radio*/
+    border: 1px solid black;
+    border-radius: 10px;
+}
+header,aside,section,footer{/*este coloca el fondo verde a las etiquetas*/
+    background-color: rgb(158, 221, 100);
+}
+nav,article{/*este coloca el fondo cafe a las etiquetas*/
+    background-color: rgb(253, 226, 186);
+}
+header,footer{/*este declara que las etiquetas tengan el largo de la pantalla*/
+    width: 100%;
+    
+}
+aside,section{/*aqui se acomoda la parte central de la pagina, coocando los margenes*/
+    float: left;
+    width:46%;
+    height: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:2.5%;
+
+}
+nav,article{/*este acomoda las etiquetas interiores del header y section */
+    width: 90%;
+    margin:0 auto;
+    height: 75px;
+}
+footer{/*devlara la altura y que se separa de la seccion centrl*/
+    clear: left;
+    height: 100px;
+}
+article{/*declara los margenes de los articulos dentro del section*/
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+header{/*declara la altura del header*/
+    height: 200px;
+}
+nav{
+    margin-top: 70px;
+}
+
+
