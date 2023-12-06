@@ -1,0 +1,363 @@
+<?php
+$servidor = "127.0.0.1:3308";
+$usuario = "root";
+$clave="";
+$bd = "id21579763_viajesoaxaca";
+
+$conexion = mysqli_connect($servidor, $usuario, $clave, $bd);
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="..\css\main.css">
+    <title>Oxaca viajes</title>
+</head>
+
+<body onload="startSwitch()"> <!--Inicia el ciclo de animacion-->
+    <header>
+        <nav>
+            <div class="Navigator"><a href="#first">Home</a></div><!--Redirige la vista a la seccion home-->
+            <div class="Navigator"><a href="#ArticleLugares">Lugares Turisticos</a></div><!--Redirige la vista a la seccion Lugares-->
+            <div class="Navigator"><a href="#ArticlePlatillos">Platillos Tipicos</a></div><!--Redirige la vista a la seccion Platillos-->
+            <div class="Navigator"><a href="#contactoArticle">Contacto</a></div><!--Redirige la vista a la seccion home-->
+            <div class="Navigator"><a href="#registrarse">Registros</a></div><!--Redirige la vista a la seccion registros-->
+        </nav>
+    </header>
+
+    <section>
+        <!--Seccion Inicial-->
+        <div id="Intro"><!--un div que cubre toda la seccion-->
+            <div id="Dots"><!--Este div se encarga del overlay del fondo-->
+                <article id="articleInicial"><!--Es el articulo que solo cubre la seccion de inicial-->
+                    <div id="first" class="Separator"></div><!--Genera espacio para que el header no cubra la seccion-->
+                    <aside id="IntroImg"><!--Solo cubre la seccion de Visite Oaxaca-->
+                        <h1>Visite Oaxaca</h1>
+                        Embárcate en un viaje único hacia la rica y fascinante tierra de Oaxaca, donde la historia, la
+                        cultura y la belleza natural convergen para ofrecer una experiencia inolvidable. En el corazón
+                        de
+                        México, Oaxaca se presenta como un mosaico de tradiciones ancestrales, sabores auténticos y
+                        paisajes
+                        que cautivan el alma.
+
+                        Descubre las calles empedradas y plazas encantadoras de la ciudad de Oaxaca, donde la
+                        arquitectura
+                        colonial se mezcla armoniosamente con la herencia indígena. Explora la imponente Zona
+                        Arqueológica
+                        de Monte Albán, testigo silencioso de la grandeza de la civilización zapoteca, y sumérgete en
+                        las
+                        historias talladas en cada piedra antigua.
+
+                        Los mercados locales te invitan a un festín de colores y sabores. Deleita tu paladar con la
+                        explosión de la gastronomía oaxaqueña: tlayudas crujientes, moles exquisitos y el inconfundible
+                        aroma del chocolate artesanal. Conviértete en un espectador de las habilidades de los artesanos
+                        locales, cuyas manos crean piezas únicas que capturan la esencia de la tradición.
+                    </aside>
+
+                    <!--Seccion Historia-->
+                    <aside id="ArticleHistoria"><!--Solo cubre la seccion de histori-->
+                        <h1>Historia de Oxaca</h1>
+                        Hace muchos años, en la región sur de México, se encuentra el hermoso estado de Oaxaca. Su
+                        historia
+                        está impregnada de tradiciones, cultura y colores vibrantes que datan de tiempos precolombinos.
+
+                        En el corazón de Oaxaca, se alza la antigua ciudad de Monte Albán, un sitio arqueológico que fue
+                        el
+                        centro de la civilización zapoteca. Aquí, entre los años 500 a.C. y 800 d.C., floreció una
+                        sociedad
+                        avanzada con impresionantes construcciones, como pirámides y observatorios astronómicos, que
+                        reflejaban su profundo conocimiento del cosmos.
+
+                        Con la llegada de los españoles en el siglo XVI, Oaxaca experimentó una transformación cultural.
+                        La
+                        fusión entre las tradiciones indígenas y la influencia europea dio lugar a una rica mezcla de
+                        costumbres y creencias. Las iglesias coloniales, como la Catedral de Oaxaca, se construyeron
+                        sobre
+                        antiguos templos indígenas, simbolizando esta convergencia.
+
+                        La diversidad étnica de Oaxaca se manifiesta en sus comunidades indígenas, cada una con su
+                        propio
+                        idioma y tradiciones. En las regiones montañosas, las mujeres tejedoras crean hermosos textiles
+                        con
+                        técnicas ancestrales, mientras que los mercados locales rebosan de vida, ofreciendo una
+                        explosión de
+                        sabores y colores gracias a las ricas variedades de chiles, maíz y chocolate.
+
+                        Oaxaca es también famosa por su celebración del Día de los Muertos, una festividad que honra a
+                        los
+                        seres queridos fallecidos. Las calles se llenan de altares coloridos, ofrendas de comida y
+                        flores de
+                        cempasúchil, creando un ambiente de respeto y alegría que refleja la cosmovisión única de esta
+                        región.
+
+                        A lo largo de los años, Oaxaca ha resistido cambios y preservado su identidad única. Sus
+                        paisajes
+                        montañosos, su gastronomía exquisita y su rica tradición artesanal continúan atrayendo a
+                        visitantes
+                        de todo el mundo, quienes se enamoran de la magia que emana de esta tierra llena de historia y
+                        belleza.
+                    </aside>
+                </article>
+            </div>
+        </div>
+
+        <!--Seccion Lugares-->
+        <div id="Lugares"><!--contine toda la seccion de lugares-->
+            <article id="ArticleLugares"><!--Es el articulo que contendra la tabla-->
+                <h1 id="h1Lugares">Lugares Turisticos</h1>
+                <table id="tablaLugares"><!--Es la tabla-->
+                    <tr id="row1" onmouseover="stopSwitch()" onmouseout="startSwitch()"><!--Cuando el mouse esta sobre el TR detiene el ciclo, cuando se remueve el mouse se ejecuta el ciclos-->
+                        <td class="tdOther">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                        <th class="thLugar">
+                            Monte Alban
+                            <img class="lugar"
+                                src="https://www.mexicodestinos.com/blog/wp-content/uploads/2023/04/monte-alban-607x420.png"
+                                alt="">
+                        </th>
+                    </tr>
+                    <tr id="row2" onmouseover="stopSwitch()" onmouseout="startSwitch()"><!--Cuando el mouse esta sobre el TR detiene el ciclo, cuando se remueve el mouse se ejecuta el ciclos-->
+                        <td class="tdOther">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                        <th class="thLugar">
+                            Hierve agua
+                            <img class="lugar"
+                                src="https://www.mexicodestinos.com/blog/wp-content/uploads/2023/04/hierve-el-agua-607x420.png"
+                                alt="">
+                        </th>
+                    </tr>
+                    <tr id="row3" onmouseover="stopSwitch()" onmouseout="startSwitch()"><!--Cuando el mouse esta sobre el TR detiene el ciclo, cuando se remueve el mouse se ejecuta el ciclos-->
+                        <td class="tdOther">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                        <th class="thLugar">
+                            Templo de Santo Domingo de Guzmán
+                            <img class="lugar"
+                                src="https://www.mexicodestinos.com/blog/wp-content/uploads/2023/04/santo-domingo-607x420.png"
+                                alt="">
+                        </th>
+                    </tr>
+                </table>
+
+            </article>
+        </div>
+        <!--Seccion Platillos-->
+        <div id="Platillos"><!--Cubre toda la seccion de Platillos-->
+            <article id="ArticlePlatillos"><!--Es el articulo que contendra la tabla-->
+                <h1>Platillos Tipicos de Oaxaca</h1>
+                <table id="tablaPlatillos"><!--Es la tabla de la comida-->
+                    <tr>
+                        <th class="thComida">
+                            Tasajo
+                            <img class="comida" src="https://queridaoaxaca.com/wp-content/uploads/2018/07/tasajo.png"
+                                alt="">
+                        </th>
+                        <td class="tdOther">Comenzamos con este corte de carne que se cubre con sal y se deja reposar
+                            por días, para que
+                            tome su sabor característico.</td>
+                    </tr>
+                    <tr>
+                        <th class="thComida">
+                            Mole negro
+                            <img class="comida" src="https://honest-food.net/wp-content/uploads/2019/12/mole-negro.jpg"
+                                alt="">
+                        </th>
+                        <td class="tdOther">El mole es una receta considerada de celebración, por lo que se prepara en
+                            fechas especiales
+                            o
+                            cuando viene una fiesta</td>
+                    </tr>
+                    <tr>
+                        <th class="thComida">
+                            Tlayudas
+                            <img class="comida"
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fc7%2F1f%2F7f%2Fc71f7f79ffea3965a02b3297b44d69f3.jpg&f=1&nofb=1&ipt=0d19247a317e3c6d7335409e4fbcb8d65281d95e8af249a98e6510af2931afaf&ipo=images"
+                                alt="">
+                        </th>
+                        <td class="tdOther"> las tlayudas llevan una primera capa de asiento de manteca de cerdo,
+                            frijoles cocinados con
+                            hojas de aguacate, quesillo y proteínas como tasajo, chorizo, cecina, camarones y hasta
+                            biuses.
+                            Dependiendo de la zona donde se les prepare, pueden llevar también col, lechuga y hierbas
+                            como
+                            el chepiche.</td>
+                    </tr>
+                    <tr>
+                        <th class="thComida">
+                            Mole amarillo
+                            <img class="comida"
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.cocinadelirante.com%2Fsites%2Fdefault%2Ffiles%2Fimages%2F2017%2F02%2Fmoleamarillooaxaca.jpg&f=1&nofb=1&ipt=17cd1d90a8bafe496edddbe5f541be4e7bdc39740487d42fcc42f950271d8d43&ipo=images"
+                                alt="">
+                        </th>
+                        <td class="tdOther">Aunque no es tan popular como el mole negro, el amarillo es un prodigio de
+                            la gastronomía de
+                            Oaxaca. A diferencia de otras preparaciones de este tipo en el estado, se hace con bastante
+                            menos ingredientes y, en general, tiende a ser mucho más vegetal</td>
+                    </tr>
+
+                </table>
+            </article>
+        </div>
+        <!--Seccion Contactos-->
+        <div class="Separator"></div>
+        <article id="contactoArticle"><!--El articulo que contendra -->
+            <aside id="contacto"><!--El contenedor de la informacion-->
+                <h1>Contacto</h1>
+                <img id="miImagen"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4X1wJo5xHm3YICPWZqVCPgLBEJ7.jpg&f=1&nofb=1&ipt=53b20ad17cc3c38ad71bdd57d4624d703149310ecd465199631dd4be8417aa99&ipo=images"
+                    alt="">
+
+                Elian Nuño Mora
+                <ul>
+                    <li>Email: elian.nuno@uabc.edu.mx</li>
+                    <li>Numero de telefono: 664 4908348 </li>
+                </ul>
+            </aside>
+        </article>
+        <article id="registrarse"><!--Seccion para registrarse-->
+            <aside id="asideRegistrarse"><!--Contenido para la seccion de viajes-->
+                <h1>Quieres registrarte para un viaje?</h1>
+                <h2>Solo llena nuestro formulario!</h2>
+                <!-- Trigger para abrir el Modal -->
+                <button id="myBtn">Registrarse</button>
+
+                <!-- El Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal-->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <form action="#" name="registrocontactos" method="post">
+                            <table id="tableRegistro">
+                                <tr>
+                                    <th class="Title"><label>Nombre</label></th>
+                                    <td>
+                                        <input class="Input" Name="Nombre" type="text" maxlength="45" required autofocus>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Apellido Paterno</label></th>
+                                    <td>
+                                        <input class="Input" Name="ApellidoPaterno" type="text" maxlength="25" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Apellido Materno</label></th>
+                                    <td>
+                                        <input class="Input" Name="ApellidoMaterno" type="text" maxlength="25" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Edad</label></th>
+                                    <td>
+                                        <input class="Input" Name="Edad" type="number" min="0" max="100" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Telefono</label></th>
+                                    <td>
+                                        <input class="Input" Name="Telefono" type="text"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Direccion</label></th>
+                                    <td>
+                                        <input class="Input" Name="Direccion" type="text" required maxlength="45">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Quieres Camiseta?</label></th>
+                                    <td>
+                                        <label class="OtherInput" for="Si">Si</label> <input class="OtherInput"
+                                            type="radio" name="Camisa" value="Si" required>
+                                        <label class="OtherInput" for="No">No</label> <input class="OtherInput"
+                                            type="radio" name="Camisa" value="No">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Tamaño Camisa</label></th>
+                                    <td>
+                                        <select class="OtherInput" name="TamanoCamisa" id="genero">
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Genero</label></th>
+                                    <td>
+                                        <select class="OtherInput" name="Genero" id="genero">
+                                            <option value="F">Femenino</option>
+                                            <option value="M">Masculino</option>
+                                            <option value="Other">Otro</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="Title"><label>Comentarios</label></th>
+                                    <td>
+                                        <textarea class="Input" name="Comentario" rows="6" maxlength="145"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <input class="Input" type="submit" name="registro">
+                                    </td>
+                                    <td>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </article>
+    </section>
+    <div class="Separator"></div>
+    <footer></footer>
+    <script src="table.js"></script>
+</body>
+
+</html>
+
+<?php
+    if(isset($_POST['registro']))
+    {
+        
+        $nombre = $_POST['Nombre'];
+        $apellidoPaterno = $_POST['ApellidoPaterno'];
+        $apellidoMaterno = $_POST['ApellidoMaterno'];
+        $edad = $_POST['Edad'];
+        $telefono = $_POST['Telefono'];
+        $direccion = $_POST['Direccion'];
+        $camisa = $_POST['Camisa'];
+        $tamano = $_POST['TamanoCamisa'];
+        $genero = $_POST['Genero'];
+        $comentario = $_POST['Comentario'];
+
+
+        $guardar = "INSERT INTO registros VALUES ('$nombre', '$apellidoPaterno', '$$apellidoMaterno', '$edad', '$telefono', '$direccion', '$camisa', '$tamano', '$genero', '$comentario', '0')";
+        $ejecutar = mysqli_query($conexion, $guardar);
+    }
+?>

@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+article,
+nav {
+    border-radius: 5px;
+}
+
+h1 {
+    color: azure;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline overline double azure 4px;
+}
+
+article,
+nav,
+section {
+    height: max-content;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* Align vertical */
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: rgba(28, 28, 28, 0.76);
+    z-index: 3;
+}
+
+nav {
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    width: 85%;
+    background-color: rgb(196, 196, 196);
+
+}
+
+section {
+    margin: 0 auto;
+    width: 100%;
+}
+
+article {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%;
+    height: max-content;
+}
+
+aside {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: .7s;
+}
+
+a:hover {
+    color: rgb(0, 113, 156);
+    text-decoration: underline;
+}
+
+table {
+    color: black;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr {
+    transition: .5s;
+    background-color: rgb(196, 196, 196);
+}
+
+tr:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 113, 156);
+}
+
+.OtherInput {
+    margin-left: 15%;
+}
+
+.tdOther {
+    padding: 30px;
+}
+
+.Input {
+
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Title {
+    width: 30%;
+}
+
+.Navigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+    transition: .5s;
+    height: 40px;
+}
+
+.Navigator:hover {
+
+    transform: scale(1.9);
+
+}
+
+.Separator {
+    height: 20px;
+}
+
+#first {
+    height: 80px;
+}
+
+#IntroImg {
+    height: 100px;
+    z-index: 2;
+
+}
+
+.thComida,
+.thLugar {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.comida,
+.lugar {
+    border: 3px solid rgba(0, 0, 0, 0.493);
+    width: 400px;
+
+}
+
+.lugar {
+    float: right;
+}
+
+#Intro {
+    background-image: url(https://www.gob.mx/cms/uploads/article/main_image/100678/Boda__en_santo_domingo__9__2.jpg);
+    min-height: 1300px;
+
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Dots {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1300px;
+    background-color: rgba(78, 78, 78, 0.144);
+    background-image: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    z-index: 1;
+}
+
+#historia {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallsdesk.com%2Fwp-content%2Fuploads%2F2017%2F01%2FOaxaca-Widescreen-.jpg&f=1&nofb=1&ipt=8a5ff3b3c3ac65740387e920b0a2240fcd91e1d3de7840f50133bbbbb3d5f789&ipo=images);
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Platillos {
+    background-image: url(https://wallpaperaccess.com/full/1412206.jpg);
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tablaPlatillos,
+#tablaLugares {
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#Registros {
+
+    background-image: url(https://media.tacdn.com/media/attractions-content--1x-1/11/a8/f5/cf.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+
+
+}
+
+#miImagen {
+
+    border: 5px solid rgba(0, 0, 0, 0.116);
+    width: 200px;
+}
+
+#contacto {
+    color: azure;
+    border: 5px solid rgba(0, 0, 0, 0.507);
+    border-radius: 25px;
+    width: max-content;
+    padding: 0 25px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+#contacto:hover {
+    transform: scale(1.1);
+
+}
+
+#contactoArticle {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#articleInicial {
+    float: left;
+    width: 90%;
+    margin: 0 4.2%;
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: azure;
+}
+
+#ArticleHistoria,
+#IntroImg {
+    margin: 0 2.4%;
+    float: left;
+    width: 45%;
+}
+
+#ArticleLugares,
+.Separator {
+    clear: both;
+}
+
+#ArticleLugares {
+    color: rgb(236, 236, 236);
+
+}
+
+#h1Lugares {
+    text-decoration: underline overline double rgb(236, 236, 236) 4px;
+}
+
+#Lugares {
+
+    background-color: rgb(55, 55, 61);
+}
+
+#row1 {
+    display: flex;
+}
+
+#row2 {
+    display: none;
+}
+
+#row3 {
+    display: none;
+}
+
+#registro {
+    background-image: url(https://wallpapercave.com/wp/wp8477478.jpg);
+    background-size: cover;
+    display: none;
+    padding: 25px;
+    font-size: 20px;
+    width: auto;
+
+}
+
+#tableRegistro {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#registrarse {
+    margin: 0 auto;
+    width: auto;
+    background-color: rgb(55, 56, 61);
+}
+#asideRegistrarse{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myBtn{
+    height: 30px;
+    align-items: center;
+    margin: 0 auto;
+    width: 25%;
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+    transition: .2s;
+}
+#myBtn:hover{
+    background-color: rgb(0, 113, 156);
+}
